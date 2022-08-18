@@ -48,6 +48,10 @@ Correct Camera Angle:
 
 ![Correct Camera Angle](https://user-images.githubusercontent.com/111534019/185493984-c94469b8-fb44-4f55-8549-4273a648a52c.jpg)
 
+Incorrect Camera Angle:
+
+![IncorrectCameraAngle](https://user-images.githubusercontent.com/111534019/185494294-26a57577-5e20-472e-a629-6e25c633310d.jpg)
+
 
 
 
