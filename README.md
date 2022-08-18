@@ -19,7 +19,7 @@ For the program to run properly, follow the list below.
  
 ![step1](https://user-images.githubusercontent.com/111534019/185489452-87dad19b-830e-4da3-b0ff-981d6995e92c.png)
 
-2. Drag the Auto Golfer folder onto your desktop (or other desired location)
+2. If you chose to open the archive, drag the Auto Golfer folder onto your desktop (or other desired location). If you extracted the contents, skip to step 3.
  
 ![step 2](https://user-images.githubusercontent.com/111534019/185489783-47f1649f-008e-4091-902b-1c1ad4c6ac07.png)
 
