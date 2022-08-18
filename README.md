@@ -29,7 +29,9 @@ For the program to run properly, follow the list below.
 
 4. Click the Start button on the GUI to begin the Auto Golf program.
     NOTE: There are a few settings in Corporate Clash to tweak for the program to run properly.
+    
           1: The Aspect Ratio MUST be set to 16:9 for the program to click the right locations and identify images properly. 
+          
           2: Resolution MUST be set to 1600x900, as some of the click functions are set to pixel locations, and a different resolution will result in innaccurate/missed clicks.
           
           3: Schtickerbook size MUST be set to Large, same reason as #2 on the list.
