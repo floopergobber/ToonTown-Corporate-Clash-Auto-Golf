@@ -39,10 +39,15 @@ For the program to run properly, follow the list below.
       4: The rest of the settings should not matter, Anti-Aliasing, Antisotropic Filtering, FPS Meter, etc should have no effect on the program's accuracy.
               Note: I have tested the program with most of the settings changed, but have not experimented with Vertical Sync or Legacy Content Pack Support enabled. I have them disabled by default.
               
-      5: The golf program should be started once you have entered the Minigames Area Playground. The camera view MUST be on the furthest out setting while in spawn for the image recognition to properly work. You can easily change/reset the camera angle by pressing the TAB key. By default your Toon should load in with the camera angle the same every time. Simply press the TAB key twice to set the camera angle properly upon loading in. If the camera angle becomes altered, switch it back by pressing TAB until the camera angle is the farthest out again.
+      5: You should click the start button once you have entered the Minigames Area Playground. The camera view MUST be on the furthest out setting while in spawn for the image recognition to properly work. You can easily change/reset the camera angle by pressing the TAB key. By default your Toon should load in with the camera angle the same every time. Simply press the TAB key twice to set the camera angle properly upon loading in. If the camera angle becomes altered, switch it back by pressing TAB until the camera angle is the farthest out again.
               
 ![InkedOptions1](https://user-images.githubusercontent.com/111534019/185491583-531a47eb-3b66-4d9a-801a-38cd3caa358d.jpg)
 ![InkedOptions2](https://user-images.githubusercontent.com/111534019/185491628-5c104bc2-b16f-4965-8247-600def076b72.jpg)
+
+Correct Camera Angle:
+
+![Correct Camera Angle](https://user-images.githubusercontent.com/111534019/185493984-c94469b8-fb44-4f55-8549-4273a648a52c.jpg)
+
 
 
 
