@@ -36,7 +36,7 @@ For the program to run properly, follow the list below.
           
       3: Schtickerbook size MUST be set to Large, same reason as #2 on the list.
           
-      4: The rest of the settings should not matter, Anti-Aliasing, Antisotropic Filtering, FPS Meter, etc should have no effect on the programa accuracy.
+      4: The rest of the settings should not matter, Anti-Aliasing, Antisotropic Filtering, FPS Meter, etc should have no effect on the program's accuracy.
               Note: I have tested the program with most of the settings changed, but have not experimented with Vertical Sync or Legacy Content Pack Support enabled. I have them disabled by default.
               
 ![Options1](https://user-images.githubusercontent.com/111534019/185490116-95058fff-06c2-4897-8f99-b547026767a8.png)
