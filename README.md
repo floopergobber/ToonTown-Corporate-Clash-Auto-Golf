@@ -39,6 +39,7 @@ For the program to run properly, follow the list below.
       4: The rest of the settings should not matter, Anti-Aliasing, Antisotropic Filtering, FPS Meter, etc should have no effect on the program's accuracy.
               Note: I have tested the program with most of the settings changed, but have not experimented with Vertical Sync or Legacy Content Pack Support enabled. I have them disabled by default.
               
-![Options1](https://user-images.githubusercontent.com/111534019/185490116-95058fff-06c2-4897-8f99-b547026767a8.png)
-![Options2](https://user-images.githubusercontent.com/111534019/185490123-14280d4d-3c91-4968-840f-ac7f8875eaf8.png)
+![InkedOptions1](https://user-images.githubusercontent.com/111534019/185491583-531a47eb-3b66-4d9a-801a-38cd3caa358d.jpg)
+![InkedOptions2](https://user-images.githubusercontent.com/111534019/185491628-5c104bc2-b16f-4965-8247-600def076b72.jpg)
+
 
