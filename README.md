@@ -15,11 +15,17 @@ GUI Image 2
 # INSTRUCTIONS
 For the program to run properly, follow the list below.
 
-1. Download the Auto Golfer ZIP file and open the archive/extract the files. (you can use whatever program you have to extract zip folders, ie. 7zip, winRAR, etc..)  
+1. Download the Auto Golfer ZIP file and open the archive/extract the files. (you can use whatever program you have to extract zip folders, ie. 7zip, winRAR, etc..) 
+ 
 ![step1](https://user-images.githubusercontent.com/111534019/185489452-87dad19b-830e-4da3-b0ff-981d6995e92c.png)
+
 2. Drag the Auto Golfer folder onto your desktop (or other desired location)
+ 
 ![step 2](https://user-images.githubusercontent.com/111534019/185489783-47f1649f-008e-4091-902b-1c1ad4c6ac07.png)
+
 3. Open the Auto Golfer folder and open the Auto Golf.exe program.
+
+![step3](https://user-images.githubusercontent.com/111534019/185490059-b47f8b1f-f1e2-4ab8-b9f4-a6e26edaecd4.png)
 
 4. Click the Start button on the GUI to begin the Auto Golf program.
     NOTE: There are a few settings in Corporate Clash to tweak for the program to run properly.
@@ -28,3 +34,6 @@ For the program to run properly, follow the list below.
           3: Schtickerbook size MUST be set to Large, same reason as #2 on the list.
           4: The rest of the settings should not matter, Anti-Aliasing, Antisotropic Filtering, FPS Meter, etc should have no effect on the programa accuracy.
               Note: I have tested the program with most of the settings changed, but have not experimented with Vertical Sync or Legacy Content Pack Support enabled. I have them disabled by default.
+![Options1](https://user-images.githubusercontent.com/111534019/185490116-95058fff-06c2-4897-8f99-b547026767a8.png)
+![Options2](https://user-images.githubusercontent.com/111534019/185490123-14280d4d-3c91-4968-840f-ac7f8875eaf8.png)
+
