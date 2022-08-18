@@ -31,9 +31,12 @@ For the program to run properly, follow the list below.
     NOTE: There are a few settings in Corporate Clash to tweak for the program to run properly.
           1: The Aspect Ratio MUST be set to 16:9 for the program to click the right locations and identify images properly. 
           2: Resolution MUST be set to 1600x900, as some of the click functions are set to pixel locations, and a different resolution will result in innaccurate/missed clicks.
+          
           3: Schtickerbook size MUST be set to Large, same reason as #2 on the list.
+          
           4: The rest of the settings should not matter, Anti-Aliasing, Antisotropic Filtering, FPS Meter, etc should have no effect on the programa accuracy.
               Note: I have tested the program with most of the settings changed, but have not experimented with Vertical Sync or Legacy Content Pack Support enabled. I have them disabled by default.
+              
 ![Options1](https://user-images.githubusercontent.com/111534019/185490116-95058fff-06c2-4897-8f99-b547026767a8.png)
 ![Options2](https://user-images.githubusercontent.com/111534019/185490123-14280d4d-3c91-4968-840f-ac7f8875eaf8.png)
 
