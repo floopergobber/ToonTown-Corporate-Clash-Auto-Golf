@@ -38,7 +38,7 @@ For the program to run properly, follow the list below.
       3: Schtickerbook size MUST be set to Large, same reason as #2 on the list.
           
       4: The rest of the settings should not matter, Anti-Aliasing, Antisotropic Filtering, FPS Meter, etc should have no effect on the program's accuracy.
-              Note: I have tested the program with most of the settings changed, but have not experimented with Vertical Sync or Legacy Content Pack Support enabled. I have them disabled by default.
+              
               
       5: You should click the start button once you have entered the Minigames Area Playground. The camera view MUST be on the furthest out setting while in spawn for the image recognition to properly work. You can easily change/reset the camera angle by pressing the TAB key. By default your Toon should load in with the camera angle the same every time. Simply press the TAB key twice to set the camera angle properly upon loading in. If the camera angle becomes altered, switch it back by pressing TAB until the camera angle is the farthest out again.
               
