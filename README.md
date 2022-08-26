@@ -41,6 +41,7 @@ For the program to run properly, follow the list below.
               
               
       5: You should click the start button once you have entered the Minigames Area Playground. The camera view MUST be on the furthest out setting while in spawn for the image recognition to properly work. The program will automatically do this 2 seconds after the start button is clicked.
+      
       NOTE: You can easily change/reset the camera angle by pressing the F2 key (default key). By default your Toon should load in with the camera angle the same every time. Simply press the F2 key twice to set the camera angle properly upon loading in if the program does not adjust it automatically. If the camera angle becomes altered, switch it back by pressing F2 until the camera angle is the farthest out again.
               
 ![InkedOptions1](https://user-images.githubusercontent.com/111534019/185491583-531a47eb-3b66-4d9a-801a-38cd3caa358d.jpg)
