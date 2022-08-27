@@ -12,6 +12,8 @@ import trace
 import cv2
 from pytictoc import TicToc
 
+
+
 o = TicToc()
 
 ##click functionality
@@ -19,14 +21,23 @@ def click():
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN,0,0)
     time.sleep(.1)
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP,0,0)
-
+#finds skip button
 def skipper():
-    buttonlocation = pyautogui.locateOnScreen('Misc Images/Skip Cutscene.png', grayScale = True, confidence = .7)
+    buttonlocation = pyautogui.locateOnScreen('Misc Images/Skip Cutscene.png', grayscale = True, confidence = .7)
     if buttonlocation != None:
         centercoord = pyautogui.center(buttonlocation)
         pyautogui.moveTo(buttonlocation)
         click()
         time.sleep(np.random.uniform(.6,.8))
+#adjusts camera for pyautogui
+def cameraadjust():
+    pyautogui.keyDown('f2')
+    time.sleep(.1)
+    pyautogui.keyUp('f2')
+    time.sleep(.2)
+    pyautogui.keyDown('f2')
+    time.sleep(.1)
+    pyautogui.keyUp('f2')
 
 ##looks for hop off image that appears when getting on cart, if it does not see it, opens schticker book and returns toon to playground
 def checker():
@@ -68,10 +79,9 @@ class KThread(threading.Thread):
   def kill(self):
     self.killed = True
 
-
-## 1852,998  1560,241   1322,956
-#main loop that determines whether toon is golfing/in spawn, then performs correct action based on image recognized  
+#main loop that determines whether toon is golfing/in spawn, then performs correct action based on image recognized, also adds timer to determine if no action happening, then returns to playground  
 def bigwhileloop():
+    cameraadjust()
     global Golfing
     Golfing = False
     o.tic()
@@ -144,24 +154,6 @@ def bigwhileloop():
                     time.sleep(1)
                     checker()
                     o.tocvalue(restart=True)
-                #elif pyautogui.locateOnScreen('Spawn Images/spawn6.png', grayscale=True, confidence=.65) !=None:
-                 #   print("I can see it6")
-                  #  time.sleep(1.5)
-                   # pyautogui.keyDown('ctrl')
-                    #time.sleep(5)
-                    #pyautogui.keyUp('ctrl')
-                    #time.sleep(1)
-                    #checker()
-                    
-                #elif pyautogui.locateOnScreen('Spawn Images/spawn7.png', grayscale=True, confidence=.65) !=None:
-                 #   print("I can see it7")
-                  #  time.sleep(.5)
-                   # pyautogui.keyDown('ctrl')
-                    #time.sleep(5)
-                    #pyautogui.keyUp('ctrl')
-                    #time.sleep(1)
-                    #checker()
-                    
                 elif pyautogui.locateOnScreen('Spawn Images/spawn8.png', grayscale=True, confidence=.75) !=None or pyautogui.locateOnScreen('Spawn Images/spawn8_1600x900.png', grayscale=True, confidence=.75) !=None:
                     print("I can see it8")
                     time.sleep(1.5)
@@ -193,7 +185,6 @@ def bigwhileloop():
                     time.sleep(np.random.uniform(1.2,1.5))
                     checker()
                     o.tocvalue(restart=True)
-#pyautogui.locateOnScreen('Spawn Images/spawn1_1600x900.png', grayscale=True, confidence=.65) != None and pyautogui.locateOnScreen('Spawn Images/spawn2_1600x900.png', grayscale=True, confidence=.7) !=None and pyautogui.locateOnScreen('Spawn Images/spawn3_1600x900.png', grayscale=True, confidence=.65) !=None and pyautogui.locateOnScreen('Spawn Images/spawn3ALT.png', grayscale=True, confidence=.65) !=None and pyautogui.locateOnScreen('Spawn Images/spawn4_1600x900.png', grayscale=True, confidence=.65) !=None and pyautogui.locateOnScreen('Spawn Images/spawn5_1600x900.png', grayscale=True, confidence=.65) !=None and pyautogui.locateOnScreen('Spawn Images/spawn8.png', grayscale=True, confidence=.75) !=None and pyautogui.locateOnScreen('Spawn Images/spawn8_1600x900.png', grayscale=True, confidence=.75) !=None and pyautogui.locateOnScreen('Spawn Images/spawn9_1600x900.png', grayscale=True, confidence=.65) !=None:
                 elif o.tocvalue() > 20:
                     pyautogui.moveTo(1702,924, np.random.uniform(.2,.4), pyautogui.easeInElastic)
                     click()
@@ -206,14 +197,14 @@ def bigwhileloop():
                     time.sleep(np.random.uniform(.6,.8))
                     o.tocvalue(restart=True)
                     
-                #prints 'golfing' if hop off image is seen
+                #prints 'golfing' if hop off image is seen and changes global golfing variable, allows "golfing" phase to start
                 elif pyautogui.locateOnScreen('Misc Images/Hop Off.png', grayscale=True, confidence=.8) != None:
                     Golfing = True
                     print('Golfing')
                     continue
                 
             elif Golfing:
-                #determines which course is presented via image recognition, and then performs correct actions based on hole
+                #determines which course is presented via image recognition, and then performs correct actions based on hole, added delay for players with poor ping
                 if pyautogui.locateOnScreen('Course Images/Afternoon Tee.png', grayscale=True, confidence=.7) !=None or pyautogui.locateOnScreen('Course Images/Afternoon Tee2.png', grayscale=True, confidence=.7) !=None or pyautogui.locateOnScreen('Course Images/Afternoon Tee3.png', grayscale=True, confidence=.7) !=None:
                     print("Afternoon Tee")
                     time.sleep(.1)
@@ -237,6 +228,7 @@ def bigwhileloop():
                     pyautogui.keyDown('ctrl')
                     time.sleep(.1)
                     pyautogui.keyUp('ctrl')
+                    time.sleep(.2)
                     pyautogui.keyDown('ctrl')
                     time.sleep(1.8)
                     pyautogui.keyUp('ctrl')
@@ -245,11 +237,12 @@ def bigwhileloop():
                     time.sleep(.2)
                     pyautogui.keyUp('ctrl')
                     
-                elif pyautogui.locateOnScreen('Course Images/Hole in Fun.png', grayscale=True, confidence=.8) !=None or pyautogui.locateOnScreen('Course Images/Hole in Fun2.png', grayscale=True, confidence=.8) !=None:
+                elif pyautogui.locateOnScreen('Course Images/Hole in Fun.png', grayscale=True, confidence=.8) !=None or pyautogui.locateOnScreen('Course Images/Hole in Fun2.png', grayscale=True, confidence=.8) !=None or pyautogui.locateOnScreen('Course Images/Hole in Fun3.png', grayscale=True, confidence=.8) !=None:
                     print("Hole in Fun")
                     time.sleep(.1)
                     pyautogui.moveTo(1597,919, np.random.uniform(.4,.6), pyautogui.easeOutQuad)
                     click()
+                    time.sleep(.2)
                     pyautogui.keyDown('left')
                     time.sleep(.1)
                     pyautogui.keyUp('left')
@@ -270,15 +263,16 @@ def bigwhileloop():
                     time.sleep(.1)
                     pyautogui.moveTo(1597,919, np.random.uniform(.4,.6), pyautogui.easeInOutQuad)
                     click()
+                    time.sleep(.2)
                     pyautogui.keyDown('ctrl')
                     time.sleep(.1)
                     pyautogui.keyUp('ctrl')
-                    time.sleep(.1)
+                    time.sleep(.2)
                     pyautogui.keyDown('ctrl')
                     time.sleep(1.68)
                     pyautogui.keyUp('ctrl')
                     
-                elif pyautogui.locateOnScreen('Course Images/Holey Mackerel.png', grayscale=True, confidence=.8) !=None or pyautogui.locateOnScreen('Course Images/Holey Mackerel2.png', grayscale=True, confidence=.8) !=None or pyautogui.locateOnScreen('Course Images/Holey Mackerel3.png', grayscale=True, confidence=.8) !=None:
+                elif pyautogui.locateOnScreen('Course Images/Holey Mackerel.png', grayscale=True, confidence=.8) !=None or pyautogui.locateOnScreen('Course Images/Holey Mackerel2.png', grayscale=True, confidence=.8) !=None or pyautogui.locateOnScreen('Course Images/Holey Mackerel3.png', grayscale=True, confidence=.8) !=None or pyautogui.locateOnScreen('Course Images/Holey Mackerel4.png', grayscale=True, confidence=.8) !=None:
                     print("Holey Mackerel")
                     time.sleep(.1)
                     pyautogui.moveTo(1597,919, np.random.uniform(.4,.6), pyautogui.easeInOutQuad)
@@ -297,7 +291,7 @@ def bigwhileloop():
                     time.sleep(.1)
                     pyautogui.moveTo(1597,919, np.random.uniform(.4,.6), pyautogui.easeInElastic)
                     click()
-                    time.sleep(np.random.uniform(.4,.6))
+                    time.sleep(.2)
                     pyautogui.keyDown('right')
                     time.sleep(.1)
                     pyautogui.keyUp('right')
@@ -306,14 +300,14 @@ def bigwhileloop():
                     time.sleep(.1)
                     pyautogui.keyUp('ctrl')
                     time.sleep(.1)
-                    pyautogui.keyDown('left')
-                    time.sleep(.4)
-                    pyautogui.keyUp('left')
+                    pyautogui.keyDown('up')
+                    time.sleep(.1)
+                    pyautogui.keyUp('up')
                     time.sleep(.1)
                     pyautogui.keyDown('ctrl')
                     time.sleep(1.1)
                     pyautogui.keyUp('ctrl')
-                    time.sleep(18)
+                    time.sleep(20)
                     pyautogui.keyDown('ctrl')
                     time.sleep(.2)
                     pyautogui.keyUp('ctrl')
@@ -323,12 +317,15 @@ def bigwhileloop():
                     time.sleep(.1)
                     pyautogui.moveTo(1597,919, np.random.uniform(.4,.6), pyautogui.easeInBounce)
                     click()
+                    time.sleep(.2)
                     pyautogui.keyDown('ctrl')
                     time.sleep(.1)
                     pyautogui.keyUp('ctrl')
+                    time.sleep(.2)
                     pyautogui.keyDown('right')
                     time.sleep(.6)
                     pyautogui.keyUp('right')
+                    time.sleep(.1)
                     pyautogui.keyDown('ctrl')
                     time.sleep(1.8)
                     pyautogui.keyUp('ctrl')
@@ -365,14 +362,16 @@ def bigwhileloop():
                     time.sleep(.1)
                     pyautogui.moveTo(1597,919, np.random.uniform(.4,.6), pyautogui.easeInOutQuad)
                     click()
+                    time.sleep(.2)
                     pyautogui.keyDown('ctrl')
                     time.sleep(.1)
                     pyautogui.keyUp('ctrl')
+                    time.sleep(np.random.uniform(.2,.4))
                     pyautogui.keyDown('ctrl')
                     time.sleep(1.55)
                     pyautogui.keyUp('ctrl')
                     
-                elif pyautogui.locateOnScreen('Course Images/Swing a Long.png', grayscale=True, confidence=.75) !=None or pyautogui.locateOnScreen('Course Images/Swing a Long2.png', grayscale=True, confidence=.75) !=None:
+                elif pyautogui.locateOnScreen('Course Images/Swing a Long.png', grayscale=True, confidence=.75) !=None or pyautogui.locateOnScreen('Course Images/Swing a Long2.png', grayscale=True, confidence=.75) !=None or pyautogui.locateOnScreen('Course Images/Swing a Long3.png', grayscale=True, confidence=.75) !=None:
                     print("Swing a Long")
                     time.sleep(.1)
                     pyautogui.moveTo(1597,919, np.random.uniform(.4,.6), pyautogui.easeInQuad)
@@ -401,15 +400,19 @@ def bigwhileloop():
                     time.sleep(.1)
                     pyautogui.moveTo(1597,919, np.random.uniform(.4,.6), pyautogui.easeOutQuad)
                     click()
+                    time.sleep(.2)
                     pyautogui.keyDown('left')
                     time.sleep(.1)
                     pyautogui.keyUp('left')
+                    time.sleep(.2)
                     pyautogui.keyDown('ctrl')
                     time.sleep(.1)
                     pyautogui.keyUp('ctrl')
+                    time.sleep(np.random.uniform(.2,.4))
                     pyautogui.keyDown('left')
                     time.sleep(.5)
                     pyautogui.keyUp('left')
+                    time.sleep(np.random.uniform(.2,.4))
                     pyautogui.keyDown('ctrl')
                     time.sleep(.8)
                     pyautogui.keyUp('ctrl')
@@ -428,7 +431,7 @@ def bigwhileloop():
                     Golfing = False
                     print('Done Golfing')
                     continue
-                #if timer runs down to 29 seconds, determines that golf ball is not going in hole, returns golfing to false so when forced out of golf holes toon resumes looking for spawn images
+                #if timer runs down to 25 seconds, determines that golf ball is not going in hole, returns golfing to false so when forced out of golf holes toon resumes looking for spawn images
                 elif pyautogui.locateOnScreen('Misc Images/TimerRunOut.png', grayscale = True, confidence = .8) !=None:
                     Golfing = False
                     print('Done Golfing')
@@ -470,6 +473,7 @@ while True:
 
      if  event == '-START-':
          window['-OUTPUT-'].update('Started')
+         time.sleep(2)
          x.start()
          
          
