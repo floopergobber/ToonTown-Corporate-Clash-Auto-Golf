@@ -31,13 +31,13 @@ def skipper():
         time.sleep(np.random.uniform(.6,.8))
 #adjusts camera for pyautogui
 def cameraadjust():
-    pyautogui.keyDown('f2')
+    pyautogui.keyDown('tab')
     time.sleep(.1)
-    pyautogui.keyUp('f2')
+    pyautogui.keyUp('tab')
     time.sleep(.2)
-    pyautogui.keyDown('f2')
+    pyautogui.keyDown('tab')
     time.sleep(.1)
-    pyautogui.keyUp('f2')
+    pyautogui.keyUp('tab')
 
 ##looks for hop off image that appears when getting on cart, if it does not see it, opens schticker book and returns toon to playground
 def checker():
