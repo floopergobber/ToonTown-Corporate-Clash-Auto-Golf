@@ -17,15 +17,19 @@ For the program to run properly, follow the list below.
 
 1. Download the Auto Golfer ZIP file and open the archive/extract the files. (you can use whatever program you have to extract zip folders, ie. 7zip, winRAR, etc..) 
  
-![step1](https://user-images.githubusercontent.com/111534019/185489452-87dad19b-830e-4da3-b0ff-981d6995e92c.png)
+![InkedStep0](https://user-images.githubusercontent.com/111534019/187006083-8c900b02-7442-4504-b078-4f968ee86548.jpg)
+![Step1](https://user-images.githubusercontent.com/111534019/187006098-b084693e-db0d-4530-b567-1390e6f75705.jpg)
 
-2. If you chose to open the archive, drag the Auto Golfer folder onto your desktop (or other desired location). If you extracted the contents, skip to step 3.
+2. Open the ToonTown-Corporate-Clash-Auto-Golf Folder
  
-![step 2](https://user-images.githubusercontent.com/111534019/185489783-47f1649f-008e-4091-902b-1c1ad4c6ac07.png)
+![Step2](https://user-images.githubusercontent.com/111534019/187006115-fb82954b-13d8-4ba7-855b-4c3253eb53ce.jpg)
 
 3. Open the Auto Golfer folder and open the Auto Golf.exe program.
 
-![step3](https://user-images.githubusercontent.com/111534019/185490059-b47f8b1f-f1e2-4ab8-b9f4-a6e26edaecd4.png)
+![Step3](https://user-images.githubusercontent.com/111534019/187006146-eee83817-6a79-452f-b2fa-7e7ac3909dd0.jpg)
+
+![Step4](https://user-images.githubusercontent.com/111534019/187006150-b3c6b44c-19ac-4c70-9b2c-36db69fe8167.jpg)
+
 
 4. Click the Start button on the GUI to begin the Auto Golf program.
    
