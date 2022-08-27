@@ -20,7 +20,7 @@ For the program to run properly, follow the list below.
 ![InkedStep0](https://user-images.githubusercontent.com/111534019/187006083-8c900b02-7442-4504-b078-4f968ee86548.jpg)
 ![Step1](https://user-images.githubusercontent.com/111534019/187006098-b084693e-db0d-4530-b567-1390e6f75705.jpg)
 
-2. Open the ToonTown-Corporate-Clash-Auto-Golf Folder
+2. Open the ToonTown-Corporate-Clash-Auto-Golf Folder and drag the Auto Golfer folder onto your desktop/preferred location.
  
 ![Step2](https://user-images.githubusercontent.com/111534019/187006115-fb82954b-13d8-4ba7-855b-4c3253eb53ce.jpg)
 
