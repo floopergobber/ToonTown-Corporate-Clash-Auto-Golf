@@ -38,6 +38,9 @@ For the program to run properly, follow the list below.
 
 4. Click the Start button on the GUI to begin the Auto Golf program.
    
+   ![Start](https://user-images.githubusercontent.com/111534019/187007015-62a8e964-6659-45ff-9b41-eaa23c2a69a2.jpg)
+
+   
    NOTE: There are a few settings in Corporate Clash to tweak for the program to run properly.
     
       1: The Aspect Ratio MUST be set to 16:9 for the program to click the right locations and identify images properly. 
