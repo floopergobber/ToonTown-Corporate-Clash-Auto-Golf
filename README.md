@@ -30,9 +30,10 @@ For the program to run properly, follow the list below.
 
 ![Step4](https://user-images.githubusercontent.com/111534019/187006150-b3c6b44c-19ac-4c70-9b2c-36db69fe8167.jpg)
 
-![Warning](https://user-images.githubusercontent.com/111534019/187006896-7d47138a-cb96-4ed3-b1b7-3883a6c94c46.jpg)
+![InkedWarning](https://user-images.githubusercontent.com/111534019/187006955-353f4992-5114-4a1c-a0ea-0a3d61c4eeed.jpg)
 
-![Warning2](https://user-images.githubusercontent.com/111534019/187006897-b97a3fd9-78d4-4af1-b956-c96049820ab5.jpg)
+![InkedWarning2](https://user-images.githubusercontent.com/111534019/187006956-70583f70-228c-45b1-9e1c-957484989a6b.jpg)
+
 
 
 4. Click the Start button on the GUI to begin the Auto Golf program.
