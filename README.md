@@ -24,11 +24,15 @@ For the program to run properly, follow the list below.
  
 ![Step2](https://user-images.githubusercontent.com/111534019/187006115-fb82954b-13d8-4ba7-855b-4c3253eb53ce.jpg)
 
-3. Open the Auto Golfer folder and open the Auto Golf.exe program.
+3. Open the Auto Golfer folder and run the Auto Golf.exe program. You will likely get a prompt from Windows Defender, simply click "More Info" then "Run Anyway" and the GUI will appear 
 
 ![Step3](https://user-images.githubusercontent.com/111534019/187006146-eee83817-6a79-452f-b2fa-7e7ac3909dd0.jpg)
 
 ![Step4](https://user-images.githubusercontent.com/111534019/187006150-b3c6b44c-19ac-4c70-9b2c-36db69fe8167.jpg)
+
+![Warning](https://user-images.githubusercontent.com/111534019/187006896-7d47138a-cb96-4ed3-b1b7-3883a6c94c46.jpg)
+
+![Warning2](https://user-images.githubusercontent.com/111534019/187006897-b97a3fd9-78d4-4af1-b956-c96049820ab5.jpg)
 
 
 4. Click the Start button on the GUI to begin the Auto Golf program.
